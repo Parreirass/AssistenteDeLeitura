@@ -1,7 +1,7 @@
 # Auxiliar de Redação
 
 <div style="display: inline-block;">    
-<img align="center" height="20px" width="20px" src="https://img.shields.io/badge/-C-blue"/> 
+<img align="center" height="20px" width="60px" src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white"/> 
 <img align="center" height="20px" width="80px" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg"/> 
 </a> 
 </div>
@@ -9,8 +9,8 @@
 <p> </p>
 <p> </p>
 
-<p align="justify">
-Alunos: José Marconi de Almeida Júnior, Felipe Parreiras Dias, Felipe Werneck de Oliveira Mendes, Lucas Fernandes Barbosa de Andrade.
+### Contribuidores
+Felipe Parreiras Dias, Felipe Werneck de Oliveira Mendes, José Marconi de Almeida Júnior, Lucas Fernandes Barbosa de Andrade.
   
 
 # Introdução
@@ -79,3 +79,54 @@ Esse pequeno exemplo possui um arquivo Makefile que realiza todo o procedimento 
 
 <p> </p>
 
+# Contatos
+
+#### Felipe Werneck
+<div style="display: inline-block;">
+<a href="https://t.me/felipewom">
+<img align="center" height="20px" width="90px" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/> 
+</a>
+
+<a href="https://www.linkedin.com/in/felipe-werneck-93520a209">
+<img align="center" height="20px" width="90px" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+</div>
+
+#### Felipe Parreiras
+<div style="display: inline-block;">
+<a href="https://t.me/fparreiras">
+<img align="center" height="20px" width="90px" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/> 
+</a>
+
+<a href="https://www.linkedin.com/in/felipe-parreiras-56b075277/">
+<img align="center" height="20px" width="90px" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+</div>
+
+#### José Marconi Almeida
+<div style="display: inline-block;">
+<a href="https://t.me/jmarconia">
+<img align="center" height="20px" width="90px" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/> 
+</a>
+
+<a href="https://www.linkedin.com/in/jmarconi-almeida/">
+<img align="center" height="20px" width="90px" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+</div>
+
+#### Lucas Fernandes
+<div style="display: inline-block;">
+<a href="https://t.me/lucas_fba">
+<img align="center" height="20px" width="90px" src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/> 
+</a>
+
+<a href="https://www.linkedin.com/in/lucas-fernandes-381091204/">
+<img align="center" height="20px" width="90px" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+</a>
+
+</div>
+
+<p> </p>
