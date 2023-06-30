@@ -9,10 +9,6 @@
 <p> </p>
 <p> </p>
 
-### Contribuidores
-Felipe Parreiras Dias, Felipe Werneck de Oliveira Mendes, José Marconi de Almeida Júnior, Lucas Fernandes Barbosa de Andrade.
-  
-
 # Introdução
 <p align="justify">
 A publicação dos resultados de pesquisa é uma etapa crucial do trabalho científico. Geralmente, esses resultados são compartilhados na forma de artigos em congressos e periódicos, após passarem por uma revisão rigorosa quanto à forma e conteúdo. Infelizmente, é comum encontrar artigos na academia que apresentam dificuldades de leitura, além de conter erros de
