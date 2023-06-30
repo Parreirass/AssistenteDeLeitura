@@ -27,11 +27,13 @@ O objetivo deste trabalho é especificar, projetar e implementar um sistema que 
 <p align="justify">
 O programa ira ler um arquivo contento um texto sem nenhuma formatação onde cada sentença termina por um sinal de pontuação
 
-|          Sinais de pontuação            |                                                                                                                                   
+|          Sinais de pontuação  |                                                                                                                                   
 | ------------------------------|
 |  `.`                          |                                                                   
 |  `!`                          |                                                                                                                                                                                   
-|  `?`                          |                                                                                                      
+|  `?`                          |                                                                                                    
+Cada parágrafo é separado por pelo menos uma linha em branco. Ao decorrer no texto existem palavras que nao possuem conteudo semantico, como artigos (a, o, as,os) e conjunções (e, ou) denominadas "stop words". A lista de "stop words" foi fornecida atraves de um arquivo criado por nós.
+
                                                                                                                           
 
 # Arquivos e Funções                                                       
