@@ -21,22 +21,35 @@ Para lidar com a questão acima apresentada, existem diversas ferramentas de aux
 O objetivo deste trabalho é especificar, projetar e implementar um sistema que ajude no processo de redação. Para realizar essa tarefa, foi essencial escolher cuidadosamente as estruturas de dados e os respectivos algoritmos, visando a utilização eficiente do sistema na prática
 
 <p align="justify">
-O programa ira ler um arquivo contento um texto sem nenhuma formatação onde cada sentença termina por um sinal de pontuação
+O programa ira ler um arquivo contento um texto sem nenhuma formatação onde cada sentença termina por um sinal de pontuação. Cada parágrafo é separado por pelo menos uma linha em branco. Ao decorrer no texto existem palavras que nao possuem conteudo semantico, como artigos e conjunções denominadas "stop words". A lista de "stop words" foi fornecida atraves de um arquivo criado por nós.
 
-|          Sinais de pontuação  |                                                                                                                                   
-| ------------------------------|
-|  `.`                          |                                                                   
-|  `!`                          |                                                                                                                                                                                   
-|  `?`                          |                                                                                                    
-Cada parágrafo é separado por pelo menos uma linha em branco. Ao decorrer no texto existem palavras que nao possuem conteudo semantico, como artigos (a, o, as,os) e conjunções (e, ou) denominadas "stop words". A lista de "stop words" foi fornecida atraves de um arquivo criado por nós.
+|          Sinais de pontuação  | Stop words                                      |
+|-------------------------------|-------------------------------------------------|
+| `.`,   `!`,   `?`                   |   `artigos(a, o, as,os) ou conjunções(e, ou) `  |
+               
 
-                                                                                                                          
+<p align="justify">
+A saida do programa contem diversas infomações, sendo elas: 
+
+Para cada paragrafo do texto deve conter o numero da linha do arquivo fonte onde o paragrafo inicia e termina, o numero de sentenças existentes no paragrafo e o número de palavras de cada sentença incluindo e descartando as "stop words". A razão para inclusão dessas informações se deve ao fato de que existem em redações, parágrafos formados por uma única sentença (o que deve ser evitado), sentenças muito longas ou curtas de mais, ou mesmo uma mistura dessas situações.
+
+As palavras que não são stop word listadas em ordem alfabéticas com a requência de sua ocorrência no texto, indicando as linhas do arquivo onde essas surgem. No caso em que a palavra aparece mais de uma vez em um mesmo parágrafo, foi indicado a sua ocorrência e a distância entre elas incluindo as stop words. Isso se deve ao fato de que é comum na escrita, principalmente científica, repetirmos palavras várias vezes ao longo do texto ou em um mesmo parágrafo.
+
+A ocorrência de certas expressões sendo que para cada expressão foi indicado a linha no arquivo fonte onde aparece. O conjunto de expressões a serem analisadas foi lido de um arquivo txt criado por nós. Isso se deve ao fato de que existem certas expressões ou palavras que são frequentemente usadas mas não existem ou deixam o texto confuso ou pobre devido a sua inclusão. O exemplo mais comum é "em nível de" ou "a nível de" como é bem discutido pelo filólogo Vianney Mesquita, professor da Universidade Federal do Ceará em um de seus livros. Também temos exemplos de palavras que não existem ou são usadas com sentidos inadequados como "deletar" no sentido de remover, e "suportar" no sentido de ter uma funcionalidade. 
+
 
 # Arquivos e Funções                                                       
 
-O projeto é dividiro entre três arquivos de códigos própriamente ditos: `leitura.hpp`, `leitura.cpp` e `main.cpp`. O primeiro serve para criar as funções que, por sua vez, serão trabalhadas no segundo. Já o terceiro serve para chamar as funções em sua determinada ordem de necessidade. Ao executar o código por completo, ele irá trabalhar em cima de um arquivo `.txt` que servirá para leitura. Toda a análise de texto será feita em base desse arquivo *.txt*.
+O projeto é dividido entre três arquivos de códigos própriamente ditos: `leitura.hpp`, `leitura.cpp` e `main.cpp`.
+
+|  Arquivo                        |   Função                                                                                          |
+| ------------------------------- | ------------------------------------------------------------------------------------------------- |
+|  `main.c`                       | Arquivo principal para iniciar e chamar as funções do código                                                    |
+|  `leitura.hpp`                  | Define as funções e as estruturas que foram utilizadas no código |
+|  `leitura.cpp`                  | Contém o escopo de todas as funções que foram utilizadas |
+
 <br><br>
-Como saída, o programa irá gerar no terminal apenas o tempo gasto para o mesmo ser executado. Os demais resultados da análise serão exibidos em arquivos *.txt* criados à partir da execução do código.
+Como saída, o programa irá gerar no terminal apenas o tempo gasto para o mesmo ser executado. Os demais resultados da análise serão exibidos em um arquivo de saida *.txt* criado à partir da execução do código.
 <p> </p>
 
 # Lógica Implementada
