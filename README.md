@@ -35,16 +35,34 @@ O programa ira ler um arquivo contento um texto sem nenhuma formatação onde ca
                                                                                                                           
 
 # Arquivos e Funções                                                       
+<p align="justify">
+  
+<p> </p>
 
 # Lógica Implementada
+<p align="justify">
+  
+<p> </p>
 
 # Testes Realizados
+<p align="justify">
+  
+<p> </p>
 
 # Análise dos Testes 
+<p align="justify">
+  
+<p> </p>
 
 # Conclusão
+<p align="justify">
+  
+<p> </p>
 
 # Especificações do Dispositivo utilizado
+<p align="justify">
+  
+<p> </p>
 
 # Compilação e Execução
 
