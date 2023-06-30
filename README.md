@@ -35,6 +35,7 @@ Cada parágrafo é separado por pelo menos uma linha em branco. Ao decorrer no t
 # Arquivos e Funções                                                       
 
 O projeto é dividiro entre três arquivos de códigos própriamente ditos: `leitura.hpp`, `leitura.cpp` e `main.cpp`. O primeiro serve para criar as funções que, por sua vez, serão trabalhadas no segundo. Já o terceiro serve para chamar as funções em sua determinada ordem de necessidade. Ao executar o código por completo, ele irá trabalhar em cima de um arquivo `.txt` que servirá para leitura. Toda a análise de texto será feita em base desse arquivo *.txt*.
+<br><br>
 Como saída, o programa irá gerar no terminal apenas o tempo gasto para o mesmo ser executado. Os demais resultados da análise serão exibidos em arquivos *.txt* criados à partir da execução do código.
 <p> </p>
 
