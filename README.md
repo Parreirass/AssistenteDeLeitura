@@ -47,8 +47,7 @@ O projeto é dividido entre três arquivos de códigos própriamente ditos: `lei
 |  `main.c`                       | Arquivo principal para iniciar e chamar as funções do código                                                    |
 |  `leitura.hpp`                  | Define as funções e as estruturas que foram utilizadas no código |
 |  `leitura.cpp`                  | Contém o escopo de todas as funções que foram utilizadas |
-
-<br><br>
+<p align="justify">
 Como saída, o programa irá gerar no terminal apenas o tempo gasto para o mesmo ser executado. Os demais resultados da análise serão exibidos em um arquivo de saida *.txt* criado à partir da execução do código.
 <p> </p>
 
