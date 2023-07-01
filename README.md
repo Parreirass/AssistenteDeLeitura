@@ -51,9 +51,18 @@ O projeto é dividido entre três arquivos de códigos própriamente ditos: `lei
 Como saída, o programa irá gerar no terminal apenas o tempo gasto para o mesmo ser executado. Os demais resultados da análise serão exibidos em um arquivo de saida *.txt* criado à partir da execução do código.
 
 # Lógica Implementada
-<p align="justify">
+  O arquivo principal, `main.cpp`, inicializa o tempo de execução, chama a função `readPrincipal()` e marca o tempo ao fim do programa, respectivamente. A função citada é a responsável por todo o funcionamento do código propriamente dito. Definida no `leitura.hpp` e trabalhada no `leitura.cpp`, ela é a que processa todas as demais funções presentes no projeto.
+
+### Funcionamento da Função readPrincipal()
+Em primeiro lugar, é definido o nome do arquivo de texto que será analizado, posteriormente, outras variáveis dos tipos *int, bool e string* são apresentadas para cumprirem funções específicas. São também definidas variáveis do tipo `unordered_map`. Algumas variáveis desse último tipo processam informações de uma struct denominada *Sword*(criada no arquivo *leitura.hpp*), que armazena as informações de cada palavra individualmente:
+- Quantidade (int)
+- Distância (vector<int>)
+- Posição (vector<int>)
+- Parágrafo (vector<int>)
+- Sentença (vector<int>)
   
-<p> </p>
+A primeira função referenciada chama-se `preencheMapPontos()`, ela elimina certos caracteres que não serão analisados como palavras.
+Posteriormente, outras duas funções são executadas: `readExpressoes()` e `readStopWords()`, elas servem para ler os arquivos *expressoes.txt* e *stopwords.txt* respectivamente, identificar cada um de seus elementos e armazená-los em um *unordered_map* para, depois, servir de suporte para análise do arquivo de texto principal.
 
 # Testes Realizados
 <p align="justify">
@@ -66,11 +75,6 @@ Como saída, o programa irá gerar no terminal apenas o tempo gasto para o mesmo
 <p> </p>
 
 # Conclusão
-<p align="justify">
-  
-<p> </p>
-
-# Especificações do Dispositivo utilizado
 <p align="justify">
   
 <p> </p>
