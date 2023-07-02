@@ -76,6 +76,29 @@ Posteriormente, outras duas funções são executadas: `readExpressoes()` e `rea
 
 - Os exemplos de *output* apresentados abaixo foram retirados da execução do algorítmo analisando o arquivo `Semana_Machado_Assis.txt`.
 
+<img src="/img/redacao2.jpeg">
+
+- Todo incício de um novo parágrafo, o arquivo `outputt.txt` apresenta um resumo como esse, exibindo as seguintes informações:
+  - Linha inicial
+  - Linha final
+  - Sentença
+  - Stop-Word
+  - Não stop-word
+
+ <img src="/img/redacao1.jpeg">
+
+- As palavras contidas em cada parágrafo são identificadas, separadas e analisadas uma a uma. Cada palavra possui um atributo único de características básicas:
+  - Número do parágrafo que está localizada
+  - Sentença
+  - Linha
+  - Número de aparições
+  - Posição no parágrafo
+  - Distância entre aparições (caso tenha mais de uma aparição)
+ 
+Cada parágrafo do texto é exibido da forma apresentada acima. A análise de cada palavra permite fazer uma distinção única uma a uma, auxiliando na observação da redação.
+
+O terminal *WSL* apresenta, apenas, o número de palavras totais do texto analisado e o tempo que o algorítmo demorou para ser executado.
+
 # Análise dos Testes 
 <p align="justify">
   
