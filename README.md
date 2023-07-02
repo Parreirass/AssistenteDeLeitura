@@ -64,6 +64,10 @@ O loop principal dessa função, repete enquanto não chegar no final do arquivo
 
 Ao final da função é chamado duas funções de print a `outputParagrafos` e `outputGeral`. 
 
+<p align="center">
+<img src="/img/hash.png">
+</p>
+
 # Testes Realizados
 - Os testes que serão apresentados abaixo foram feitos em um Notebook Acer Nitro 5 (intel i5 10300H - gtx 1650 - 8gb ram).
 - O tempo médio foi feito à partir de uma média simples do tempo de 8 execuções do algorítmo.
