@@ -47,6 +47,9 @@ O projeto é dividido entre três arquivos de códigos própriamente ditos: `lei
 |  `main.c`                       | Arquivo principal para iniciar e chamar as funções do código                                                    |
 |  `leitura.hpp`                  | Define as funções e as estruturas que foram utilizadas no código |
 |  `leitura.cpp`                  | Contém o escopo de todas as funções que foram utilizadas |
+|  `expressoes.txt`               | arquivo de entrada que contem as expressões |
+| `stopwords.txt` | arquivo que contem as stop words|
+| `arquivo de leitura .txt` | arquivo de entrada principal no qual será feita toda a análise |
 
 Como saída, o programa irá gerar no terminal apenas o tempo gasto para o mesmo ser executado. Os demais resultados da análise serão exibidos em um arquivo de saida *.txt* criado à partir da execução do código.
 
@@ -70,8 +73,7 @@ A escolha do `unodered_map` foi devido ao processo de encontrar um elemento que 
 
 O loop principal dessa função, repete enquanto não chegar no final do arquivo de entrada inserido. Partindo disso é analisado linha por linha do texto e verificando se existe as expressões que estão no `map` de expressões. O base desse loop é feita em cima de um if que verifica se a linha que está sendo lida não é uma linha em branco, nesse caso se for uma linha em branco significa que a proxima linha já é outro parágrafo. Dentro desse if existe outro loop que pega palavra por palavra da linha e pega todas as informações da palavra, como a posição dela na paragrafo. Além disso existem dois contadores de palavras na sentança, um que conta com as stop word e outro sem. Após todo esse processo, é salvo no `map` de sentenças todas as sentenças do paragrafo, e salva tambem as palavras em dois `map`, um para fazer o print geral (`mapPrintGeral`) e outro para fazer o print por paragrafo (`mapPrintPorParagrafo`), nesse caso é salvo as informações desse `map`em um vector, já que depois de salvar no vector o `mapPrintPorParagrafo` será limpado para poder pegar as informações de outro paragrafo. Nesse loop tambem é calculado a distancia entre duas palavras iguais no mesmo paragrafo.
 
-Ao final da função é chamado duas funções de print a `outputParagrafos` e `outputGeral`. A função  `outputParagrafos` printa no arquivo de saida as informações de cada paragrafo, como a linha que ele começa e a linha que ele termina, a quantidade de palavras com e sem stop word, alem de printar as informações de cada palavra do paragrafo, como a quantidade de vez que ela aparece e sua posição. Já o `outputGeral` printa todas as palavras do texto e suas respectivas informações e tambem printa as expressões com suas informações.
-
+Ao final da função é chamado duas funções de print a `outputParagrafos` e `outputGeral`. A função  `outputParagrafos` printa no arquivo de saida as informações de cada paragrafo, como a linha que ele começa e a linha que ele termina, a quantidade de palavras com e sem stop word, alem de printar as informações de cada palavra do paragrafo, como a quantidade de vez que ela aparece e sua posição. Já o `outputGeral` printa todas as palavras do texto em ordem alfabetica e suas respectivas informações, para isso foi necessario copiar todas as informações do unoderd_map para um vector, esse preocedmento é necessario para que possamos ordenar com sort, ele ordena o vetor com base nas chaves do map. Ele printa tambem ao final do arquivo, as expressões. 
 
 # Testes Realizados
 - Os testes que serão apresentados abaixo foram feitos em um Notebook Acer Nitro 5 (intel i5 10300H - gtx 1650 - 8gb ram).
