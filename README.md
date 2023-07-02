@@ -99,6 +99,8 @@ Cada parágrafo do texto é exibido da forma apresentada acima. A análise de ca
 
 O terminal *WSL* apresenta, apenas, o número de palavras totais do texto analisado e o tempo que o algorítmo demorou para ser executado.
 
+<img src="/img/redacao3.jpeg">
+
 # Análise dos Testes 
 <p align="justify">
   
