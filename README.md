@@ -65,9 +65,16 @@ A primeira função referenciada chama-se `preencheMapPontos()`, ela elimina cer
 Posteriormente, outras duas funções são executadas: `readExpressoes()` e `readStopWords()`, elas servem para ler os arquivos *expressoes.txt* e *stopwords.txt* respectivamente, identificar cada um de seus elementos e armazená-los em um *unordered_map* para, depois, servir de suporte para análise do arquivo de texto principal.
 
 # Testes Realizados
-<p align="justify">
-  
-<p> </p>
+- Os testes que serão apresentados abaixo foram feitos em um Notebook Acer Nitro 5 (intel i5 10300H - gtx 1650 - 8gb ram).
+- O tempo médio foi feito à partir de uma média simples do tempo de 8 execuções do algorítmo.
+
+|  Arquivo                        |   Tempo Médio                                                                                          |   Quantidade de Palavras |
+| ------------------------------- | ------------------------------------------------------------------------------------------------- | ------------------------------ |
+|  `DomCasmurro.txt`                       | 2,62 segundos                                   | 9152 |
+| `Biblia.txt`      | 21,43 segundos | 28736 |
+| `Semana_Machado_Assis.txt` | 27,1262 segundos | 25021 |
+
+- Os exemplos de *output* apresentados abaixo foram retirados da execução do algorítmo analisando o arquivo `Semana_Machado_Assis.txt`.
 
 # Análise dos Testes 
 <p align="justify">
@@ -76,7 +83,9 @@ Posteriormente, outras duas funções são executadas: `readExpressoes()` e `rea
 
 # Conclusão
 <p align="justify">
-  
+  Em conclusão, o projeto "Auxiliar de Redação" cumpre seu papel com êxito. A estrutura "unordered_map", utilizada para fazer o armazenamento de palavras, tem como base de funcionamento uma tabela hash, feito em um tempo médio constante (O(1)), pois os elementos são dividos em "baldes", permitindo um acesso eficiente à eles. Entretanto, em algum caso raro de colisão de posição, a complexidade pode se aproximar de (O(n)), devido à nova ordenação de nova seleção de posição dos elementos. Como base de comparação, a estrutura "map" simples, tem custo médio (O(logn)), logo, a escolha do "unordered_map" se mostrou bastante favorável.
+  <br><br>
+  A funcionalidade e praticidade do algorítmo pode ser provada à partir da "análise de resultados" apresentada acima, já que ele investiga palavra por palavra de um arquivo de texto extremamente extenso, com uma variedade enorme de palavras em um tempo relativamente pequeno, se comparar com todas as verificações feitas por ele.
 <p> </p>
 
 # Compilação e Execução
