@@ -101,11 +101,6 @@ O terminal *WSL* apresenta, apenas, o número de palavras totais do texto analis
 
 <img src="/img/redacao4.jpeg">
 
-# Análise dos Testes 
-<p align="justify">
-  
-<p> </p>
-
 # Conclusão
 <p align="justify">
   Em conclusão, o projeto "Auxiliar de Redação" cumpre seu papel com êxito. A estrutura "unordered_map", utilizada para fazer o armazenamento de palavras, tem como base de funcionamento uma tabela hash, feito em um tempo médio constante (O(1)), pois os elementos são dividos em "baldes", permitindo um acesso eficiente à eles. Entretanto, em algum caso raro de colisão de posição, a complexidade pode se aproximar de (O(n)), devido à nova ordenação de nova seleção de posição dos elementos. Como base de comparação, a estrutura "map" simples, tem custo médio (O(logn)), logo, a escolha do "unordered_map" se mostrou bastante favorável.
