@@ -114,6 +114,21 @@ Então, por meio de um if após o loop de leitura, no caso onde o input do progr
  
 Cada parágrafo do texto é exibido da forma apresentada acima. A análise de cada palavra permite fazer uma distinção única uma a uma, auxiliando na observação da redação.
 
+- Após o print por parágrafos, é exibido, em ordem alfabética, todas as palavras presentes no texto analisado:
+
+<img src="/img/redacao5.jpeg">
+
+- Um outro tipo de print do `outputt.txt` apresenta um resumo, por parágrafo, de:
+  - Número de sentenças
+  - Número de palavras com stop-word
+  - Número de palavras sem stop-word
+
+ <img src="/img/redacao6.jpeg">
+
+- Por fim, um último tipo de print do arquivo de texto de saída, faz um resumo por expressão, apresentando a linha em que cada uma expressão aparece na obra literária tida como base na análise do algorítmo.
+
+<img src="/img/redacao7.jpeg">
+
 O terminal *WSL* apresenta, apenas, o número de palavras totais do texto analisado e o tempo em segundos que o algorítmo demorou para ser executado.
 
 <img src="/img/redacao4.jpeg">
