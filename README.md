@@ -112,7 +112,7 @@ Então, por meio de um if após o loop de leitura, no caso onde o input do progr
   - Posição no parágrafo
   - Distância entre aparições (caso tenha mais de uma aparição)
  
-Cada parágrafo do texto é exibido da forma apresentada acima. A análise de cada palavra permite fazer uma distinção única uma a uma, auxiliando na observação da redação.
+> Cada parágrafo do texto é exibido da forma apresentada acima. A análise de cada palavra permite fazer uma distinção única uma a uma, auxiliando na observação da redação.
 
 - Após o print por parágrafos, é exibido, em ordem alfabética, todas as palavras presentes no texto analisado:
 
