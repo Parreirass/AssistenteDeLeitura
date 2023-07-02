@@ -58,6 +58,8 @@ A primeira coisa a ser feita na função `readPrincipal()` é a declaração das
 
 Para entender como a logica foi construida, é necessario entender como essas estruturas de dados funcionam, no caso o `map` é um contêiner associativo da biblioteca padrão que armazena pares de chave-valor, onde cada chave é única. É uma implementação da estrutura de dados chamada "árvore de pesquisa binária equilibrada" (também conhecida como árvore AVL) que mantém as chaves em ordem. Já o `unordered_map` é outro contêiner associativo da biblioteca padrão que armazena pares de chave-valor, assim como o `map`. No entanto, ao contrário do `map`, o `unordered_map` não mantém as chaves em ordem, mas sim os organiza em uma estrutura de tabala hash. Resumindo, o `map` é uma implementação de arvore binaria que oredena os dados, ja o `unordered_map` é uma implementação de tabela hash que só insere e não ordena.
 
+<img src="/img/avl.png" alt="árvore AVL">
+
 A escolha do `unodered_map` foi devido ao processo de encontrar um elemento que é feito em um tempo médio constante de (O(1)), já que a tabela hash divide os elementos em buckets com base em sua função hash, o que permite um acesso eficiente aos dados. Foram utilizadas ao total 5 estruturas de dadps sendo 4 `unodered_map` e uma `map`, são elas : `mapPrintGeral`que armazena todas as palavras do texto e suas informações, `stopWords` que armazena as stop words lidas de um arquivo .txt, `expressoes` que armazena as expressões tambem lidas de um arquivo .txt, `pontos` que armazena as pontuações, (esse `map` é preenchido manualmente na função `preencheMapPontos`), sendo essas 4 estruturas um `unodered_map`, e `mapPrintPorParagrafo` que é um `map` que armazena apenas as palavras de um determinado paragrafo, razão disso será explicada mais a frente. Alem disso existe um vector que armazenas em cada posição um `map` `mapPrintPorParagrafo`.
 
 O loop principal dessa função, repete enquanto não chegar no final do arquivo de entrada inserido. Partindo disso é analisado linha por linha do texto e verificando se existe as expressões que estão no `map` de expressões. O base desse loop é feita em cima de um if que verifica se a linha que está sendo lida não é uma linha em branco, nesse caso se for uma linha em branco significa que a proxima linha já é outro parágrafo. Dentro desse if existe outro loop que pega palavra por palavra da linha e pega todas as informações da palavra, como a posição dela na paragrafo. Além disso existem dois contadores de palavras na sentança, um que conta com as stop word e outro sem. Após todo esse processo, é salvo no `map` de sentenças todas as sentenças do paragrafo, e salva tambem as palavras em dois `map`, um para fazer o print geral (`mapPrintGeral`) e outro para fazer o print por paragrafo (`mapPrintPorParagrafo`), nesse caso é salvo as informações desse `map`em um vector, já que depois de salvar no vector o `mapPrintPorParagrafo` será limpado para poder pegar as informações de outro paragrafo. Nesse loop tambem é calculado a distancia entre duas palavras iguais no mesmo paragrafo.
@@ -65,7 +67,7 @@ O loop principal dessa função, repete enquanto não chegar no final do arquivo
 Ao final da função é chamado duas funções de print a `outputParagrafos` e `outputGeral`. 
 
 <p align="center">
-<img src="/img/hash.png">
+<img src="/img/hash.png" alt="Exemplo de HASH">
 </p>
 
 # Testes Realizados
