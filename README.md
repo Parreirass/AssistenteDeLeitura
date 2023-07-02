@@ -54,7 +54,7 @@ O projeto é dividido entre três arquivos de códigos própriamente ditos: `lei
 Como saída, o programa irá gerar no terminal apenas o tempo gasto para o mesmo ser executado. Os demais resultados da análise serão exibidos em um arquivo de saida *.txt* criado à partir da execução do código.
 
 # Lógica Implementada
-  O arquivo principal, `main.cpp`, inicializa o tempo de execução, chama a função `readPrincipal()` e marca o tempo ao fim do programa, respectivamente. A função citada é a responsável por todo o funcionamento do código propriamente dito. Definida no `leitura.hpp` e trabalhada no `leitura.cpp`, ela é a que processa todas as demais funções presentes no projeto.
+>  O arquivo principal, `main.cpp`, inicializa o tempo de execução, chama a função `readPrincipal()` e marca o tempo ao fim do programa, respectivamente. A função citada é a responsável por todo o funcionamento do código propriamente dito. Definida no `leitura.hpp` e trabalhada no `leitura.cpp`, ela é a que processa todas as demais funções presentes no projeto.
 
 ### Funcionamento da Função readPrincipal()
 A primeira coisa a ser feita na função `readPrincipal()` é a declaração das principais estruturas de dados que foram utilizadas no algoritmno, no caso as estrutruras `map` e `unordered_map`. Essas estruras vão armazenar todas as infomações necessarias para construir o arquivo de saida, sendo algumas estruturas servindo apenas para auxiliar a manipular os dados. 
