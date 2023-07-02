@@ -114,7 +114,7 @@ Então, por meio de um if após o loop de leitura, no caso onde o input do progr
  
 Cada parágrafo do texto é exibido da forma apresentada acima. A análise de cada palavra permite fazer uma distinção única uma a uma, auxiliando na observação da redação.
 
-O terminal *WSL* apresenta, apenas, o número de palavras totais do texto analisado e o tempo que o algorítmo demorou para ser executado.
+O terminal *WSL* apresenta, apenas, o número de palavras totais do texto analisado e o tempo em segundos que o algorítmo demorou para ser executado.
 
 <img src="/img/redacao4.jpeg">
 
